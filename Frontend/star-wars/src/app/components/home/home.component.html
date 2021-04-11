@@ -1,0 +1,22 @@
+<router-outlet></router-outlet>
+<div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                WELCOME HOME
+            </div>
+            <div class="col-6">
+                <div (click)="onClickSummon()">
+                <button class="btn btn-primary">SUMMON SKYWALKER</button>
+            </div>
+            </div>
+
+<div>
+    <ng-container *ngFor="let p of peoples">
+        <app-people [people] = "p"></app-people>
+    </ng-container>
+</div>
+
+        </div>
+    </div>
+</div>
